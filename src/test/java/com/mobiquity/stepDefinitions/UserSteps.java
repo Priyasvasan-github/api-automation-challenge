@@ -3,7 +3,6 @@ package com.mobiquity.stepDefinitions;
 
 import com.json.model.posts.Post;
 import com.mobiquity.apis.BasePage;
-import com.mobiquity.apis.CommentsAPI;
 import com.mobiquity.apis.PostsAPI;
 import com.mobiquity.apis.UsersAPI;
 import cucumber.api.java.en.Given;
@@ -24,9 +23,6 @@ public class UserSteps {
 
     @Steps
     UsersAPI usersAPI;
-
-    @Steps
-    CommentsAPI commentsAPI;
 
     BasePage basePage = new BasePage();
     GetTestProperties getTestProperties = new GetTestProperties();

@@ -1,0 +1,117 @@
+{
+  "name": "Verify Empty list is retrieved when comments is not found",
+  "id": "verify-all-routes-of-comment-api-are-working-as-expected;verify-empty-list-is-retrieved-when-comments-is-not-found",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Given A default user with a valid postId",
+      "duration": 11,
+      "startTime": "2020-09-01T03:50:29.463366200+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 2,
+          "description": "Get posts by user id: 86",
+          "duration": 3,
+          "startTime": "2020-09-01T03:50:29.471344900+02:00[Europe/Berlin]",
+          "result": "IGNORED",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 3,
+              "description": "GET ",
+              "duration": 0,
+              "startTime": "2020-09-01T03:50:29.475334700+02:00[Europe/Berlin]",
+              "result": "SUCCESS",
+              "restQuery": {
+                "method": "GET",
+                "path": "",
+                "content": "\r",
+                "contentType": "null",
+                "requestHeaders": "Accept\u003dapplication/json\r",
+                "requestCookies": "",
+                "responseHeaders": "",
+                "responseCookies": "",
+                "statusCode": 0
+              },
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "description": "When He attempts to search for a postId with dummyCommentId",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:29.475334700+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 5,
+      "description": "Then Data retrieved is empty",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:29.475334700+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    }
+  ],
+  "userStory": {
+    "id": "verify-all-routes-of-comment-api-are-working-as-expected",
+    "storyName": "Verify all routes of comment API are working as expected",
+    "path": "src/test/resources/features/testFeatures/Comment.feature",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Test features/Verify all routes of comment API are working as expected",
+    "type": "feature",
+    "displayName": "Test features/Verify all routes of comment API are working as expected"
+  },
+  "title": "Verify Empty list is retrieved when comments is not found",
+  "tags": [
+    {
+      "name": "Regression",
+      "type": "tag",
+      "displayName": "Regression"
+    },
+    {
+      "name": "Manual",
+      "type": "External Tests",
+      "displayName": "Manual"
+    },
+    {
+      "name": "Manual",
+      "type": "tag",
+      "displayName": "Manual"
+    },
+    {
+      "name": "Test features/Verify all routes of comment API are working as expected",
+      "type": "feature",
+      "displayName": "Verify all routes of comment API are working as expected"
+    },
+    {
+      "name": "Test features",
+      "type": "capability",
+      "displayName": "Test features"
+    },
+    {
+      "name": "Comment-002",
+      "type": "tag",
+      "displayName": "Comment-002"
+    }
+  ],
+  "startTime": "2020-09-01T03:50:29.461373300+02:00[Europe/Berlin]",
+  "duration": 14,
+  "projectKey": "",
+  "annotatedResult": "PENDING",
+  "manual": true,
+  "testSource": "Cucumber",
+  "result": "PENDING"
+}

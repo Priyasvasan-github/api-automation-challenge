@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validate email address of comments from posts","Verify emails On Comments of posts for user Delphine are valid","SUCCESS","2020-09-01T03:50:22.7050229+02:00[Europe/Berlin]","0.0","5.48"
+"Validate email address of comments from posts","Verify emails on All comments are valid","SUCCESS","2020-09-01T03:50:28.1853217+02:00[Europe/Berlin]","0.0","0.29"
+"Verify all routes of comment API are working as expected","Verify all routes of comments are working as expected","SUCCESS","2020-09-01T03:50:28.6819932+02:00[Europe/Berlin]","0.0","0.5"
+"Verify all routes of comment API are working as expected","Data retrieved from nested rotes and direct routes is same","SUCCESS","2020-09-01T03:50:29.1861083+02:00[Europe/Berlin]","0.0","0.27"
+"Verify all routes of post API are working as expected","Verify all routes of post are working as expected","SUCCESS","2020-09-01T03:50:29.4773293+02:00[Europe/Berlin]","0.0","0.37"
+"Verify all routes of post API are working as expected","Data retrieved from nested rotes and direct routes is same","SUCCESS","2020-09-01T03:50:29.8506527+02:00[Europe/Berlin]","0.0","0.19"
+"Verify all routes of user are working as expected","Verify all routes of user are working as expected","SUCCESS","2020-09-01T03:50:30.057101+02:00[Europe/Berlin]","0.0","0.33"

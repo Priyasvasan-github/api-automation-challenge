@@ -30,36 +30,7 @@ public class CommentsSteps {
     @Steps
     CommentsAPI commentsAPI;
 
-    BasePage basePage = new BasePage();
     GetTestProperties getTestProperties = new GetTestProperties();
-
-    @When("^he retrieves comments on (.*) posts$")
-    public void retrieveComments(String user) {
-        List<Post>totalPosts =new ArrayList<>();
-        if("all".equalsIgnoreCase(user)){
-            totalPosts= postsAPI.getAllPosts();
-            Serenity.setSessionVariable("totalListOfCommentsForUser").to(commentsAPI.getAllComments());
-        }else{
-            long userId= usersAPI.getUserId(Serenity.sessionVariableCalled("userName"));
-            totalPosts= postsAPI.getPostsByUserId(userId);
-            Serenity.setSessionVariable("totalListOfCommentsForUser").to(commentsAPI.getAllCommentsForPosts(totalPosts));
-        }
-
-
-    }
-
-    @Then("^Comments of (.*) user|users have valid email address$")
-    public void verifyCommentsEmail(String userType) {
-        List<Comment> totalComments =new ArrayList<>();
-        if("all".equalsIgnoreCase(userType)){
-            totalComments =Serenity.sessionVariableCalled("totalListOfCommentsForUser");
-        }else{
-             totalComments=Serenity.sessionVariableCalled("totalListOfCommentsForUser");
-        }
-
-        assertThat(totalComments.size()).as("total comments size is verified as greater than 0").isGreaterThan(0);
-        assertThat(commentsAPI.verifyEmailsAreValidForComments(totalComments)).isTrue();
-    }
 
     @Given("^want to search for the comments using (.*), (.*)$")
     public void retrieveComments(String commentId,String commenterEmail) {
@@ -98,6 +69,34 @@ public class CommentsSteps {
     @When("^this data is of comments is same$")
     public void compareNestedRoutes() {
         assertThat(Serenity.sessionVariableCalled("GetCommentsByNestedResponse").toString().equalsIgnoreCase(Serenity.sessionVariableCalled("GetCommentsByIDResponse").toString())).as("Comments data for nested routes matching failed").isTrue();
+    }
+
+    @When("^he retrieves comments on (.*) posts$")
+    public void retrieveComments(String user) {
+        List<Post>totalPosts =new ArrayList<>();
+        if("all".equalsIgnoreCase(user)){
+            totalPosts= postsAPI.getAllPosts();
+            Serenity.setSessionVariable("totalListOfCommentsForUser").to(commentsAPI.getAllComments());
+        }else{
+            long userId= usersAPI.getUserId(Serenity.sessionVariableCalled("userName"));
+            totalPosts= postsAPI.getPostsByUserId(userId);
+            Serenity.setSessionVariable("totalListOfCommentsForUser").to(commentsAPI.getAllCommentsForPosts(totalPosts));
+        }
+
+
+    }
+
+    @Then("^Comments of (.*) user|users have valid email address$")
+    public void verifyCommentsEmail(String userType) {
+        List<Comment> totalComments =new ArrayList<>();
+        if("all".equalsIgnoreCase(userType)){
+            totalComments =Serenity.sessionVariableCalled("totalListOfCommentsForUser");
+        }else{
+            totalComments=Serenity.sessionVariableCalled("totalListOfCommentsForUser");
+        }
+
+        assertThat(totalComments.size()).as("total comments size is verified as greater than 0").isGreaterThan(0);
+        assertThat(commentsAPI.verifyEmailsAreValidForComments(totalComments)).isTrue();
     }
 
 }

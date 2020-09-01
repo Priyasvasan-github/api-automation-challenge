@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Verify all routes of user are working as expected","Verify all routes of user are working as expected","SUCCESS","2020-09-01T03:50:30.057101+02:00[Europe/Berlin]","0.0","0.33"
+"Verify all routes of user are working as expected","Verify Empty list is retrieved when user is not found","PENDING","2020-09-01T03:50:30.388067+02:00[Europe/Berlin]","0.0","0.01"

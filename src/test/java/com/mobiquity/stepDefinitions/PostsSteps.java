@@ -22,19 +22,6 @@ public class PostsSteps {
 
     GetTestProperties getTestProperties = new GetTestProperties();
 
-    @When("^He fetch the posts created by him$")
-    public void fetchPosts() {
-       long userId= usersAPI.getUserId(Serenity.sessionVariableCalled("userName"));
-        List<Post>totalPosts= postsAPI.getPostsByUserId(userId);
-        Serenity.setSessionVariable("totalPostsForUser").equals(totalPosts);
-    }
-
-    @Then("^all the posts posted by him are displayed as expected$")
-    public void all_the_posts_posted_by_him_are_displayed_as_expected() {
-        assertThat(Serenity.sessionVariableCalled("GetPostsByUserIDStatusCode").toString()).as("Status code is expected to be").isEqualTo("200");
-        assertThat((Integer)Serenity.sessionVariableCalled("totalPostsCount")).as("Count of posts is as expected").isGreaterThan(0);
-    }
-
     @When("^He want retrieve details of his posts with is (.*)$")
     public void fetchPostWithPostId(String postId) {
         Serenity.setSessionVariable("postId").to(getTestProperties.getValue(postId));
@@ -71,5 +58,16 @@ public class PostsSteps {
         assertThat(Serenity.sessionVariableCalled("GetPostsByNestedResponse").toString().equalsIgnoreCase(Serenity.sessionVariableCalled("GetPostsByUserIDResponse").toString())).as("Posts data for nested routes matching failed").isTrue();
     }
 
+    @When("^He fetch the posts created by him$")
+    public void fetchPosts() {
+        long userId= usersAPI.getUserId(Serenity.sessionVariableCalled("userName"));
+        List<Post>totalPosts= postsAPI.getPostsByUserId(userId);
+        Serenity.setSessionVariable("totalPostsForUser").equals(totalPosts);
+    }
 
+    @Then("^all the posts posted by him are displayed as expected$")
+    public void all_the_posts_posted_by_him_are_displayed_as_expected() {
+        assertThat(Serenity.sessionVariableCalled("GetPostsByUserIDStatusCode").toString()).as("Status code is expected to be").isEqualTo("200");
+        assertThat((Integer)Serenity.sessionVariableCalled("totalPostsCount")).as("Count of posts is as expected").isGreaterThan(0);
+    }
 }

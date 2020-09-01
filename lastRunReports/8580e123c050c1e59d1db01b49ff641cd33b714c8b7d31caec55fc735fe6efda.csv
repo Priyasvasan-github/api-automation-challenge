@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Verify all routes of comment API are working as expected","Verify all routes of comments are working as expected","SUCCESS","2020-09-01T03:50:28.6819932+02:00[Europe/Berlin]","0.0","0.5"
+"Verify all routes of comment API are working as expected","Data retrieved from nested rotes and direct routes is same","SUCCESS","2020-09-01T03:50:29.1861083+02:00[Europe/Berlin]","0.0","0.27"

@@ -5,8 +5,6 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 import net.serenitybdd.core.pages.PageObject;
 import utils.ForceStringDeserializer;
 
-import java.util.UUID;
-
 public class BasePage extends PageObject {
 
     public final ObjectMapper mapper = new ObjectMapper().registerModule(

@@ -1,0 +1,145 @@
+{
+  "name": "Data retrieved from nested rotes and direct routes is same",
+  "id": "verify-all-routes-of-post-api-are-working-as-expected;data-retrieved-from-nested-rotes-and-direct-routes-is-same",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Given A default user is accessing the portal",
+      "duration": 17,
+      "startTime": "2020-09-01T03:50:29.851650500+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 2,
+      "description": "When He retrieves his posts using userId",
+      "duration": 91,
+      "startTime": "2020-09-01T03:50:29.869601600+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 3,
+          "description": "Get posts by user id: 9",
+          "duration": 82,
+          "startTime": "2020-09-01T03:50:29.878578300+02:00[Europe/Berlin]",
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 4,
+              "description": "GET https://jsonplaceholder.typicode.com/posts?userId\u003d9\r",
+              "duration": 0,
+              "startTime": "2020-09-01T03:50:29.959362100+02:00[Europe/Berlin]",
+              "result": "SUCCESS",
+              "restQuery": {
+                "method": "GET",
+                "path": "https://jsonplaceholder.typicode.com/posts?userId\u003d9\r",
+                "content": "\r",
+                "contentType": "null",
+                "requestHeaders": "Accept\u003dapplication/json\r",
+                "requestCookies": "\r",
+                "responseHeaders": "Date: Tue, 01 Sep 2020 01:50:29 GMT\r\nContent-Type: application/json; charset\u003dutf-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nSet-Cookie: __cfduid\u003dd4546082136c198bdd80e778a8d55290d1598925029; expires\u003dThu, 01-Oct-20 01:50:29 GMT; path\u003d/; domain\u003d.typicode.com; HttpOnly; SameSite\u003dLax\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 1000\r\nX-Ratelimit-Remaining: 996\r\nX-Ratelimit-Reset: 1598882895\r\nVary: Origin, Accept-Encoding\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: max-age\u003d43200\r\nPragma: no-cache\r\nExpires: -1\r\nX-Content-Type-Options: nosniff\r\nEtag: W/\"aa1-7w0ImWAnFGRWG4ZRQUECVBaSqRo\"\r\nContent-Encoding: gzip\r\nVia: 1.1 vegur\r\nCF-Cache-Status: HIT\r\nAge: 12891\r\ncf-request-id: 04e8f4d97900000b375391e200000001\r\nExpect-CT: max-age\u003d604800, report-uri\u003d\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"\r\nServer: cloudflare\r\nCF-RAY: 5cbb573bff6f0b37-AMS\r",
+                "responseCookies": "__cfduid\u003dd4546082136c198bdd80e778a8d55290d1598925029;Path\u003d/;Domain\u003d.typicode.com;HttpOnly;Expires\u003d01/10/2020, 01:50\r",
+                "responseBody": "[\n    {\n        \"userId\": 9,\n        \"id\": 81,\n        \"title\": \"tempora rem veritatis voluptas quo dolores vero\",\n        \"body\": \"facere qui nesciunt est voluptatum voluptatem nisi\\nsequi eligendi necessitatibus ea at rerum itaque\\nharum non ratione velit laboriosam quis consequuntur\\nex officiis minima doloremque voluptas ut aut\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 82,\n        \"title\": \"laudantium voluptate suscipit sunt enim enim\",\n        \"body\": \"ut libero sit aut totam inventore sunt\\nporro sint qui sunt molestiae\\nconsequatur cupiditate qui iste ducimus adipisci\\ndolor enim assumenda soluta laboriosam amet iste delectus hic\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 83,\n        \"title\": \"odit et voluptates doloribus alias odio et\",\n        \"body\": \"est molestiae facilis quis tempora numquam nihil qui\\nvoluptate sapiente consequatur est qui\\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\\nreprehenderit eius rem quibusdam\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 84,\n        \"title\": \"optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut\",\n        \"body\": \"sint molestiae magni a et quos\\neaque et quasi\\nut rerum debitis similique veniam\\nrecusandae dignissimos dolor incidunt consequatur odio\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 85,\n        \"title\": \"dolore veritatis porro provident adipisci blanditiis et sunt\",\n        \"body\": \"similique sed nisi voluptas iusto omnis\\nmollitia et quo\\nassumenda suscipit officia magnam sint sed tempora\\nenim provident pariatur praesentium atque animi amet ratione\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 86,\n        \"title\": \"placeat quia et porro iste\",\n        \"body\": \"quasi excepturi consequatur iste autem temporibus sed molestiae beatae\\net quaerat et esse ut\\nvoluptatem occaecati et vel explicabo autem\\nasperiores pariatur deserunt optio\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 87,\n        \"title\": \"nostrum quis quasi placeat\",\n        \"body\": \"eos et molestiae\\nnesciunt ut a\\ndolores perspiciatis repellendus repellat aliquid\\nmagnam sint rem ipsum est\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 88,\n        \"title\": \"sapiente omnis fugit eos\",\n        \"body\": \"consequatur omnis est praesentium\\nducimus non iste\\nneque hic deserunt\\nvoluptatibus veniam cum et rerum sed\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 89,\n        \"title\": \"sint soluta et vel magnam aut ut sed qui\",\n        \"body\": \"repellat aut aperiam totam temporibus autem et\\narchitecto magnam ut\\nconsequatur qui cupiditate rerum quia soluta dignissimos nihil iure\\ntempore quas est\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 90,\n        \"title\": \"ad iusto omnis odit dolor voluptatibus\",\n        \"body\": \"minus omnis soluta quia\\nqui sed adipisci voluptates illum ipsam voluptatem\\neligendi officia ut in\\neos soluta similique molestias praesentium blanditiis\"\n    }\n]",
+                "statusCode": 200
+              },
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "description": "And He retrieves his posts through nested route using userId",
+      "duration": 82,
+      "startTime": "2020-09-01T03:50:29.961357100+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 6,
+          "description": "Get posts by nested: 9",
+          "duration": 81,
+          "startTime": "2020-09-01T03:50:29.962354+02:00[Europe/Berlin]",
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 7,
+              "description": "GET https://jsonplaceholder.typicode.com/users/9/posts\r",
+              "duration": 0,
+              "startTime": "2020-09-01T03:50:30.043138300+02:00[Europe/Berlin]",
+              "result": "SUCCESS",
+              "restQuery": {
+                "method": "GET",
+                "path": "https://jsonplaceholder.typicode.com/users/9/posts\r",
+                "content": "\r",
+                "contentType": "null",
+                "requestHeaders": "Accept\u003dapplication/json\r",
+                "requestCookies": "\r",
+                "responseHeaders": "Date: Tue, 01 Sep 2020 01:50:29 GMT\r\nContent-Type: application/json; charset\u003dutf-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nSet-Cookie: __cfduid\u003ddcee8bb693e64165d9c9264799bf064c91598925029; expires\u003dThu, 01-Oct-20 01:50:29 GMT; path\u003d/; domain\u003d.typicode.com; HttpOnly; SameSite\u003dLax\r\nX-Powered-By: Express\r\nX-Ratelimit-Limit: 1000\r\nX-Ratelimit-Remaining: 999\r\nX-Ratelimit-Reset: 1598895196\r\nVary: Origin, Accept-Encoding\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: max-age\u003d43200\r\nPragma: no-cache\r\nExpires: -1\r\nX-Content-Type-Options: nosniff\r\nEtag: W/\"aa1-7w0ImWAnFGRWG4ZRQUECVBaSqRo\"\r\nContent-Encoding: gzip\r\nVia: 1.1 vegur\r\nCF-Cache-Status: HIT\r\nAge: 971\r\ncf-request-id: 04e8f4d9cc00009d189d062200000001\r\nExpect-CT: max-age\u003d604800, report-uri\u003d\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"\r\nServer: cloudflare\r\nCF-RAY: 5cbb573c7fa19d18-AMS\r",
+                "responseCookies": "__cfduid\u003ddcee8bb693e64165d9c9264799bf064c91598925029;Path\u003d/;Domain\u003d.typicode.com;HttpOnly;Expires\u003d01/10/2020, 01:50\r",
+                "responseBody": "[\n    {\n        \"userId\": 9,\n        \"id\": 81,\n        \"title\": \"tempora rem veritatis voluptas quo dolores vero\",\n        \"body\": \"facere qui nesciunt est voluptatum voluptatem nisi\\nsequi eligendi necessitatibus ea at rerum itaque\\nharum non ratione velit laboriosam quis consequuntur\\nex officiis minima doloremque voluptas ut aut\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 82,\n        \"title\": \"laudantium voluptate suscipit sunt enim enim\",\n        \"body\": \"ut libero sit aut totam inventore sunt\\nporro sint qui sunt molestiae\\nconsequatur cupiditate qui iste ducimus adipisci\\ndolor enim assumenda soluta laboriosam amet iste delectus hic\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 83,\n        \"title\": \"odit et voluptates doloribus alias odio et\",\n        \"body\": \"est molestiae facilis quis tempora numquam nihil qui\\nvoluptate sapiente consequatur est qui\\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\\nreprehenderit eius rem quibusdam\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 84,\n        \"title\": \"optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut\",\n        \"body\": \"sint molestiae magni a et quos\\neaque et quasi\\nut rerum debitis similique veniam\\nrecusandae dignissimos dolor incidunt consequatur odio\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 85,\n        \"title\": \"dolore veritatis porro provident adipisci blanditiis et sunt\",\n        \"body\": \"similique sed nisi voluptas iusto omnis\\nmollitia et quo\\nassumenda suscipit officia magnam sint sed tempora\\nenim provident pariatur praesentium atque animi amet ratione\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 86,\n        \"title\": \"placeat quia et porro iste\",\n        \"body\": \"quasi excepturi consequatur iste autem temporibus sed molestiae beatae\\net quaerat et esse ut\\nvoluptatem occaecati et vel explicabo autem\\nasperiores pariatur deserunt optio\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 87,\n        \"title\": \"nostrum quis quasi placeat\",\n        \"body\": \"eos et molestiae\\nnesciunt ut a\\ndolores perspiciatis repellendus repellat aliquid\\nmagnam sint rem ipsum est\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 88,\n        \"title\": \"sapiente omnis fugit eos\",\n        \"body\": \"consequatur omnis est praesentium\\nducimus non iste\\nneque hic deserunt\\nvoluptatibus veniam cum et rerum sed\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 89,\n        \"title\": \"sint soluta et vel magnam aut ut sed qui\",\n        \"body\": \"repellat aut aperiam totam temporibus autem et\\narchitecto magnam ut\\nconsequatur qui cupiditate rerum quia soluta dignissimos nihil iure\\ntempore quas est\"\n    },\n    {\n        \"userId\": 9,\n        \"id\": 90,\n        \"title\": \"ad iusto omnis odit dolor voluptatibus\",\n        \"body\": \"minus omnis soluta quia\\nqui sed adipisci voluptates illum ipsam voluptatem\\neligendi officia ut in\\neos soluta similique molestias praesentium blanditiis\"\n    }\n]",
+                "statusCode": 200
+              },
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "description": "And this data is of posts is same",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:30.044135300+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0
+    }
+  ],
+  "userStory": {
+    "id": "verify-all-routes-of-post-api-are-working-as-expected",
+    "storyName": "Verify all routes of post API are working as expected",
+    "path": "src/test/resources/features/testFeatures/Post.feature",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Test features/Verify all routes of post API are working as expected",
+    "type": "feature",
+    "displayName": "Test features/Verify all routes of post API are working as expected"
+  },
+  "title": "Data retrieved from nested rotes and direct routes is same",
+  "tags": [
+    {
+      "name": "Regression",
+      "type": "tag",
+      "displayName": "Regression"
+    },
+    {
+      "name": "Test features",
+      "type": "capability",
+      "displayName": "Test features"
+    },
+    {
+      "name": "Test features/Verify all routes of post API are working as expected",
+      "type": "feature",
+      "displayName": "Verify all routes of post API are working as expected"
+    }
+  ],
+  "startTime": "2020-09-01T03:50:29.850652700+02:00[Europe/Berlin]",
+  "duration": 194,
+  "projectKey": "",
+  "manual": false,
+  "testSource": "Cucumber",
+  "result": "SUCCESS"
+}

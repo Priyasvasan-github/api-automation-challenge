@@ -1,0 +1,176 @@
+{
+  "name": "verify comments are displayed correctly",
+  "id": "validate-email-address-of-comments-from-posts;verify-comments-are-displayed-correctly",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Given A super user is accessing the portal",
+      "duration": 7,
+      "startTime": "2020-09-01T03:50:28.480533500+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 2,
+      "description": "When He fetch the posts created by him",
+      "duration": 188,
+      "startTime": "2020-09-01T03:50:28.489508300+02:00[Europe/Berlin]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "children": [
+        {
+          "number": 3,
+          "description": "Get user id: super",
+          "duration": 166,
+          "startTime": "2020-09-01T03:50:28.503470400+02:00[Europe/Berlin]",
+          "result": "IGNORED",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 4,
+              "description": "Get user by username: super",
+              "duration": 16,
+              "startTime": "2020-09-01T03:50:28.508458100+02:00[Europe/Berlin]",
+              "result": "IGNORED",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 5,
+                  "description": "GET ",
+                  "duration": 0,
+                  "startTime": "2020-09-01T03:50:28.525412300+02:00[Europe/Berlin]",
+                  "result": "SUCCESS",
+                  "restQuery": {
+                    "method": "GET",
+                    "path": "",
+                    "content": "\r",
+                    "contentType": "null",
+                    "requestHeaders": "Accept\u003dapplication/json\r",
+                    "requestCookies": "",
+                    "responseHeaders": "",
+                    "responseCookies": "",
+                    "statusCode": 0
+                  },
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "description": "Get posts by user id: 0",
+          "duration": 4,
+          "startTime": "2020-09-01T03:50:28.672020800+02:00[Europe/Berlin]",
+          "result": "IGNORED",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 7,
+              "description": "GET ",
+              "duration": 0,
+              "startTime": "2020-09-01T03:50:28.677006900+02:00[Europe/Berlin]",
+              "result": "SUCCESS",
+              "restQuery": {
+                "method": "GET",
+                "path": "",
+                "content": "\r",
+                "contentType": "null",
+                "requestHeaders": "Accept\u003dapplication/json\r",
+                "requestCookies": "",
+                "responseHeaders": "",
+                "responseCookies": "",
+                "statusCode": 0
+              },
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "description": "Then all the posts of him are displayed as expected",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:28.678003700+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 9,
+      "description": "When He fetch the comments for those posts",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:28.679001400+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 10,
+      "description": "Then All the comments are displayed",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:28.679001400+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 11,
+      "description": "And All of them have a valid email address",
+      "duration": 0,
+      "startTime": "2020-09-01T03:50:28.679001400+02:00[Europe/Berlin]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    }
+  ],
+  "userStory": {
+    "id": "validate-email-address-of-comments-from-posts",
+    "storyName": "Validate email address of comments from posts",
+    "path": "src/test/resources/features/testFeatures/APITest.feature",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Test features/Validate email address of comments from posts",
+    "type": "feature",
+    "displayName": "Test features/Validate email address of comments from posts"
+  },
+  "title": "verify comments are displayed correctly",
+  "tags": [
+    {
+      "name": "Test features/Validate email address of comments from posts",
+      "type": "feature",
+      "displayName": "Validate email address of comments from posts"
+    },
+    {
+      "name": "Regression",
+      "type": "tag",
+      "displayName": "Regression"
+    },
+    {
+      "name": "wip",
+      "type": "tag",
+      "displayName": "wip"
+    },
+    {
+      "name": "Test features",
+      "type": "capability",
+      "displayName": "Test features"
+    }
+  ],
+  "startTime": "2020-09-01T03:50:28.479536300+02:00[Europe/Berlin]",
+  "duration": 202,
+  "projectKey": "",
+  "annotatedResult": "SKIPPED",
+  "manual": false,
+  "testSource": "Cucumber",
+  "result": "SKIPPED"
+}
