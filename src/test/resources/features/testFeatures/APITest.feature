@@ -1,12 +1,12 @@
 Feature: Validate email address of comments from posts
 
-  @Regression @Smoke @Email-Validation-001 @wip
+  @Regression @Smoke @Email-Validation-001
   Scenario: Verify emails On Comments of posts for user Delphine are valid
     Given A default user is accessing the portal
     When he retrieves comments on his posts
     Then Comments of default user have valid email address
 
-  @Regression @Smoke @Email-Validation-002 @wip
+  @Regression @Smoke @Email-Validation-002
   Scenario: Verify emails on All comments are valid
     Given A admin user is accessing the portal
     When he retrieves comments on all posts
