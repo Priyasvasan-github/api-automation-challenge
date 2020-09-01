@@ -44,12 +44,15 @@ The reason for choosing to writ tests  in BDD format are:
 
 # Testing Framework
 
-I have used BDD Test Automation framework Using SerenityBDD and Rest Assured. This serenity BDD is a library which uses Cucumber and selenium for its development.
-Reasons for choosing this framework:
+I have used BDD Test Automation framework Using SerenityBDD and Rest Assured. Serenity BDD is a library which uses Cucumber and rest-assured for its API test development. There are several alternatives(like karate DSL, Chakram, postman scripts .. etc ) options out in the market but below are reason to use Serenity
+
+### Reasons for choosing Serenity framework:
 
 		1) Easily maintainable automated acceptance criteria
-		2) Living documentation of test results
-		3) Opensource tool with huge support Online
+		2) Compatiable with several opensource tools also built on famous libraries like selenium, cucumber and rest-assured
+		3) Storage of data in runtime for easy access
+		4) Living documentation of test results
+		5) Opensource tool with huge support Online
 
 # Testing Coverage
 
