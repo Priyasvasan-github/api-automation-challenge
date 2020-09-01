@@ -1,6 +1,6 @@
 Feature: Verify all routes of comment API are working as expected
 
-  @Regression @Comment-001 @wip
+  @Regression @Comment-001
   Scenario: Verify all routes of comments are working as expected
     Given A default user with a valid postId
     And want to search for the comments using commentId, commenterEmail
@@ -8,7 +8,7 @@ Feature: Verify all routes of comment API are working as expected
     And this data is also part of postId comments
     And this data is part of total list of comments
 
-  @Regression @wip
+  @Regression
   Scenario: Data retrieved from nested rotes and direct routes is same
     Given A default user with a valid postId
     When He retrieve his comments using postId

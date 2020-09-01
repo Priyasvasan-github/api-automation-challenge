@@ -1,6 +1,6 @@
 Feature: Verify all routes of user are working as expected
 
-  @Regression @USER-001 @wip
+  @Regression @USER-001
   Scenario: Verify all routes of user are working as expected
     Given A admin user is accessing the portal
     When He want retrieve details of a user with users uniqueId, uniqueUsername, uniqueEmail
