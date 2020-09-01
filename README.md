@@ -1,12 +1,12 @@
 
-# Automation of https://jsonplaceholder.typicode.com/ rest API end points
+# Automation of https://jsonplaceholder.typicode.com/ rest API endpoints
 
 This Project is a small POC of Serenity BDD framework using Cucumber, Rest-Assured and Java.
 It uses Selenium 3 webdriver for the web automation and Rest-Assured for API-Automation.
 Maven has been used for dependency management.
 
 **Table of Contents**
-* [Task](#Task)
+* [Task](#task)
 * [Functionality](#flow)
 * [Behavior Driven Development](#behavior-driven-development)
 * [Testing Framework](#testing-framework)
@@ -53,7 +53,11 @@ Reasons for choosing this framework:
 
 # Testing Coverage
 
-Test coverage is a living documentation thats generated from test automation, this a huge advantage of using Serenity BDD 
+Test coverage is a living documentation thats generated from test automation, this a huge advantage of using Serenity BDD.
+
+Detailed test coverage report along with the results and clasification can be found [here on_this_link](https://circleci.com/api/v1.1/project/github/sripriyavasan/api-automation-challenge/latest/artifacts/0/target/site/serenity/index.html)
+
+![Alt text](TestResults.png?raw=true "Test Results and Test coverage ScreenShot")
 # How to Run the tests
 
 	# Pre-requisite:
