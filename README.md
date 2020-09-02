@@ -58,7 +58,7 @@ I have used BDD Test Automation framework Using SerenityBDD and Rest Assured. Se
 
 Test coverage is a living documentation thats generated from test automation, this a huge advantage of using Serenity BDD.
 
-Detailed test coverage report along with the results and clasification can be found [here on_this_link](https://circleci.com/api/v1.1/project/github/sripriyavasan/api-automation-challenge/latest/artifacts/0/target/site/serenity/index.html)
+Detailed test coverage report along with the results and clasification can be found [here_on_this_link](https://circleci.com/api/v1.1/project/github/sripriyavasan/api-automation-challenge/latest/artifacts/0/target/site/serenity/index.html)
 
 ![Alt text](TestResults.png?raw=true "Test Results and Test coverage ScreenShot")
 # How to Run the tests
@@ -89,7 +89,7 @@ Detailed test coverage report along with the results and clasification can be fo
 Serenity BDD has one of the best reporting and the test reports are generated every time we execute the tests.
 When the project is cloned into Local, test results reporting, along with screenshots, can be seen if we open **_`index.html`_** from `(target\site\serenity\index.html)`.
 
-Also last executed results are attached here as a folder **_`lastRunReports`_**
+Also last executed results can be found in this [link](https://circleci.com/api/v1.1/project/github/sripriyavasan/api-automation-challenge/latest/artifacts/0/target/site/serenity/index.html)
 
 
 Kindly let me know if you need any further Information. You can contact me on my emailID.
